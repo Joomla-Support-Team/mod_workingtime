@@ -1,5 +1,5 @@
 ! МОДУЛЬ НА ЭТАПЕ ТЕСТИРОВАНИЯ !
---
+----
 Описание:
 Модуль для Joomla! CMS 3.0.0 и выше.
 
@@ -16,5 +16,5 @@
 Лицензия:
 GNU General Public License (GPL)
 
---
+----
 Русскоязычная поддержка пользователей Joomla! CMS - https://www.joomla-support.ru/
