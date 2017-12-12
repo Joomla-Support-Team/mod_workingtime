@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+
+<name>Working time indicator</name> 
+	
+    <creationDate>22.12.2016</creationDate>
+    <author>Aleksandr Kopytenko</author>
+    <authorEmail>shurikkan@joomla-support.ru</authorEmail>
+    <authorUrl>https://joomla-support.ru/</authorUrl>
+    <license>Open Source License, GNU GPL</license>
+    <version>1.0.0</version>
+	<description>MOD_WORKINGTIME_DESCR</description>
+	
+    <files>
+        <filename module="mod_workingtime">mod_workingtime.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>img/clock-hd.jpg</filename>
+        <filename>img/clock-sm.jpg</filename>
+        <filename>img/hour_arrow.png</filename>
+        <filename>img/minute_arrow.png</filename>
+        <filename>css/timepicker-ui.min.css</filename>
+        <filename>css/workingtime.css</filename>
+        <filename>js/timepicker-ui.min.js</filename>
+        <filename>js/workingtime.js</filename>
+	</files>
+    
+    <languages>
+		<language tag="ru-RU">lang/ru-RU.mod_workingtime.ini</language>
+    </languages> 
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic">  
+            
+                <field
+                    name="note"
+                    type="note"
+                    label="MOD_WORKINGTIME_MODULE_NOTE_DEV"
+                    close="true"
+                    class="alert" />
+                    
+                <field
+                    name="spacer1"
+                    type="spacer"
+                    label=""
+                    default = ""
+                    description="" />
+                
+                <field
+					name="timezone"
+					type="list"
+					label="MOD_WORKINGTIME_TIMEZONE_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="MOD_WORKINGTIME_TIMEZONE_DEFAULT_VALUE"
+					>
+						
+					<option value="Europe/Moscow">UTC+3</option>
+
+				</field>
+                
+                <field
+                    name="message"
+                    type="text"
+                    label="MOD_WORKINGTIME_MESSAGE_LABEL"
+                    default = ""
+                    description="MOD_WORKINGTIME_MESSAGE_DESCR" />
+                    
+                <field
+                    name="spacer2"
+                    type="spacer"
+                    label="Понедельник"
+                    default = ""
+                    description="" />
+                <field
+                    name="timeFrom1"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMEFROM_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMEFROM_DESCR" />
+                <field
+                    name="timeTo1"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMETO_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMETO_DESCR" />
+                    
+                <field
+                    name="spacer3"
+                    type="spacer"
+                    label="Вторник"
+                    default = ""
+                    description="" />
+                <field
+                    name="timeFrom2"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMEFROM_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMEFROM_DESCR" />
+                <field
+                    name="timeTo2"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMETO_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMETO_DESCR" />
+                    
+                <field
+                    name="spacer4"
+                    type="spacer"
+                    label="Среда"
+                    default = ""
+                    description="" />
+                <field
+                    name="timeFrom3"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMEFROM_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMEFROM_DESCR" />
+                <field
+                    name="timeTo3"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMETO_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMETO_DESCR" />
+                    
+                <field
+                    name="spacer5"
+                    type="spacer"
+                    label="Четверг"
+                    default = ""
+                    description="" />
+                <field
+                    name="timeFrom4"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMEFROM_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMEFROM_DESCR" />
+                <field
+                    name="timeTo4"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMETO_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMETO_DESCR" />
+                    
+                <field
+                    name="spacer6"
+                    type="spacer"
+                    label="Пятница"
+                    default = ""
+                    description="" />
+                <field
+                    name="timeFrom5"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMEFROM_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMEFROM_DESCR" />
+                <field
+                    name="timeTo5"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMETO_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMETO_DESCR" />
+                    
+                <field
+                    name="spacer7"
+                    type="spacer"
+                    label="Суббота"
+                    default = ""
+                    description="" />
+                <field
+                    name="timeFrom6"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMEFROM_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMEFROM_DESCR" />
+                <field
+                    name="timeTo6"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMETO_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMETO_DESCR" />
+                    
+                <field
+                    name="spacer8"
+                    type="spacer"
+                    label="Воскресенье"
+                    default = ""
+                    description="" />
+                <field
+                    name="timeFrom7"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMEFROM_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMEFROM_DESCR" />
+                <field
+                    name="timeTo7"
+                    type="text"
+                    label="MOD_WORKINGTIME_TIMETO_LABEL"
+                    default = "00:00"
+                    description="MOD_WORKINGTIME_TIMETO_DESCR" />
+                    
+            </fieldset>
+
+			<fieldset name="advanced">
+				
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>                               
+        </fields>
+    </config>          
+</extension>
